@@ -1,0 +1,21 @@
+{
+  "name": "kekenik-select",
+  "version": "0.1",
+  "description": "A small select box library",
+  "main": "src/js/kekenik-select.js",
+  "scripts": {
+    "start": "mix watch",
+    "build": "mix"
+  },
+  "author": "Hossein Razavi",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.25",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0"
+  }
+}

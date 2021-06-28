@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!--    Font Awesome Link-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">-->
+
+    <style>
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            font-family: "Vazir", sans-serif;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            direction: rtl;
+            padding: 100px;
+        }
+
+
+        .select-test {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .group {
+            width: 100%;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="./dist/css/kekenik-select.css">
+
+    <title>Kekeink Select Box | Hossein Razavi</title>
+</head>
+<body>
+
+<div class="select-test">
+    <div class="group">
+        <label for="select">استان:</label>
+        <select name="select" id="select" class="kekenik-selector">
+            <option value="آذربایجان شرقی">آذربایجان شرقی</option>
+            <option value="آذربایجان غربی">آذربایجان غربی</option>
+            <option value="اردبیل">اردبیل</option>
+            <option value="اصفهان">اصفهان</option>
+            <option value="البرز">البرز</option>
+            <option value="ایلام">ایلام</option>
+            <option value="بوشهر">بوشهر</option>
+            <option value="تهران">تهران</option>
+            <option value="چهارمحال و بختیاری">چهارمحال و بختیاری</option>
+            <option value="خراسان جنوبی">خراسان جنوبی</option>
+            <option value="خراسان رضوی">خراسان رضوی</option>
+            <option value="خراسان شمالی">خراسان شمالی</option>
+            <option value="خوزستان">خوزستان</option>
+            <option value="زنجان">زنجان</option>
+            <option value="سمنان">سمنان</option>
+            <option value="سیستان و بلوچستان">سیستان و بلوچستان</option>
+            <option value="فارس">فارس</option>
+            <option value="قزوین">قزوین</option>
+            <option value="قم">قم</option>
+            <option value="کردستان">کردستان</option>
+            <option value="کرمان">کرمان</option>
+            <option value="کرمانشاه">کرمانشاه</option>
+            <option value="کهگیلویه و بویراحمد">کهگیلویه و بویراحمد</option>
+            <option value="گلستان">گلستان</option>
+            <option value="گیلان">گیلان</option>
+            <option value="لرستان">لرستان</option>
+            <option value="مازندران">مازندران</option>
+            <option value="مرکزی">مرکزی</option>
+            <option value="هرمزگان">هرمزگان</option>
+            <option value="همدان">همدان</option>
+            <option value="یزد">یزد</option>
+        </select>
+    </div>
+</div>
+
+<!--<div class="kek_select-container">-->
+<!--    <div class="kek_selected-wrapper">-->
+<!--        <span class="kek_selected-item">خراسان جنوبی</span>-->
+<!--        <span class="kek_select-caret"></span>-->
+<!--    </div>-->
+<!--    <div class="kek_select-items">-->
+<!--        <input type="text" class="kek_select-search" placeholder="جستجو کنید...">-->
+<!--        <ul class="kek_select-nav">-->
+<!--            <li class="kek_select-item">تهران</li>-->
+<!--            <li class="kek_select-item">کرج</li>-->
+<!--            <li class="kek_select-item">خراسان شمالی</li>-->
+<!--            <li class="kek_select-item">خراسان رضوی</li>-->
+<!--            <li class="kek_select-item selected">خراسان جنوبی</li>-->
+<!--            <li class="kek_select-item">یزد</li>-->
+<!--            <li class="kek_select-item">کهگیلویه و بویراحمد</li>-->
+<!--            <li class="kek_select-item">مرکزی</li>-->
+<!--            <li class="kek_select-item">آذربایجان غربی</li>-->
+<!--            <li class="kek_select-item">آذربایجان شرقی</li>-->
+<!--            <li class="kek_select-item">سیستان و بلوچستان</li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
+
+<script src="./dist/js/kekenik-select.js"></script>
+<script>
+    kekenikSelect('.kekenik-selector', {
+        checkmark: true,
+        searchBox: true,
+        searchPlaceholder: 'جستجو کنید...',
+        // theme: 'dark'
+    });
+</script>
+</body>
+</html>
