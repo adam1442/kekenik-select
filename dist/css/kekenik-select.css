@@ -1,0 +1,163 @@
+.kek_select-container {
+  direction: rtl;
+  position: relative;
+  width: 100%;
+  outline: none;
+}
+.kek_select-container:focus .kek_selected-wrapper {
+  border-color: #6C44FF;
+}
+.kek_select-container .kek_selected-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  border: 1px solid #D3D6DB;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  outline: none;
+  background: #fff;
+}
+.kek_select-container .kek_selected-wrapper.focus {
+  border-color: #6C44FF;
+}
+.kek_select-container .kek_selected-wrapper .kek_selected-item {
+  color: #160647;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.kek_select-container .kek_selected-wrapper .kek_select-caret {
+  border: 4px solid transparent;
+  border-top-color: #160647;
+}
+.kek_select-container .kek_select-items {
+  width: 100%;
+  position: absolute;
+  border: 1px solid #D3D6DB;
+  top: 3rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  overflow-y: auto;
+  display: none;
+  max-height: 300px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.kek_select-container .kek_select-items.show {
+  display: block;
+  -webkit-animation: show-select 0.3s ease-in-out;
+          animation: show-select 0.3s ease-in-out;
+}
+.kek_select-container .kek_select-items::-webkit-scrollbar {
+  width: 5px;
+}
+.kek_select-container .kek_select-items::-webkit-scrollbar-track {
+  border-radius: 100px;
+}
+.kek_select-container .kek_select-items::-webkit-scrollbar-thumb {
+  background: #f5f4f7;
+  border-radius: 100px;
+}
+.kek_select-container .kek_select-items .kek_select-search {
+  width: 100%;
+  outline: none;
+  font-family: inherit;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #D3D6DB;
+  border-radius: 0.5rem;
+  background: #fff;
+  color: #160647;
+  margin-top: 0.5rem;
+}
+.kek_select-container .kek_select-items .kek_select-search:focus {
+  border-width: 2px;
+}
+.kek_select-container .kek_select-items .kek_select-nav {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+.kek_select-container .kek_select-items .kek_select-nav .kek_select-item {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #160647;
+}
+.kek_select-container .kek_select-items .kek_select-nav .kek_select-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+.kek_select-container .kek_select-items .kek_select-nav .kek_select-item:hover {
+  cursor: pointer;
+  background: rgba(240, 236, 255, 0.5);
+  color: #160647;
+}
+.kek_select-container .kek_select-items .kek_select-nav .kek_select-item.selected {
+  background: #f0ecff;
+  color: #6C44FF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.kek_select-container .kek_select-items .kek_select-nav .kek_select-item svg {
+  width: 24px;
+  fill: #6C44FF;
+}
+.kek_select-container .kek_select-items .kek_select-nav .kek_select-null {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  color: #a9afb9;
+}
+
+.kek_dark .kek_selected-wrapper {
+  border: 1px solid #443e63;
+  background: #2C2939;
+}
+.kek_dark .kek_selected-wrapper .kek_selected-item {
+  color: #f5f4f7;
+}
+.kek_dark .kek_selected-wrapper .kek_select-caret {
+  border-top-color: #f5f4f7;
+}
+.kek_dark .kek_select-items {
+  border: 1px solid #443e63;
+  background: #2C2939;
+}
+.kek_dark .kek_select-items .kek_select-search {
+  border: 1px solid #443e63;
+  background: #2C2939;
+  color: #f5f4f7;
+}
+.kek_dark .kek_select-items .kek_select-nav .kek_select-item {
+  color: #f5f4f7;
+}
+.kek_dark .kek_select-items .kek_select-nav .kek_select-item:hover {
+  color: #f5f4f7;
+}
+.kek_dark .kek_select-items .kek_select-nav .kek_select-null {
+  color: #242134;
+}
+
+@-webkit-keyframes show-select {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 300px;
+  }
+}
+
+@keyframes show-select {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 300px;
+  }
+}
