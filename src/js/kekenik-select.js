@@ -5,7 +5,7 @@ export default class KekenikSelect {
     constructor(element, option) {
 
         this.settings = {
-            searchPlaceholder: option.searchPlaceholder || 'جستجو کنید همرچیزی رو خخخ',
+            searchPlaceholder: option.searchPlaceholder || 'جستجو کنید...',
             notFound: option.notFound || 'موردی یافت نشد.',
             searchIn: option.searchIn || 'label',
             theme: option.theme || 'light',
