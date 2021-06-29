@@ -1,6 +1,6 @@
 {
   "name": "kekenik-select",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A small select box library",
   "main": "src/js/kekenik-select.js",
   "scripts": {

@@ -10,6 +10,8 @@
     yarn add kekenik-select
 بعد از نصب می توانید به صورت زیر استفاده کنید
 ```javascript
+import KekenikSelect from "kekenik-select";
+
 const selectElements = document.querySelectorAll('.kekenik-select');
 
 selectElements.forEach(select => {
